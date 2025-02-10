@@ -5,14 +5,14 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
-  const [isClient, setIsClient] = useState(false);
+  const isClient = typeof window !== "undefined";
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const formData ={
     name: "",
     email: "",
     phone: "",
     projectTitle: "",
-  });
+  };
   const [message, setMessage] = useState("");
 
   useEffect(() => {

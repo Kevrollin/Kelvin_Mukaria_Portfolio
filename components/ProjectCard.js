@@ -4,7 +4,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card bg-darkBg p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
       <div className="project-image mb-6">
-        <image
+        <img
           src={project.image}
           alt={project.title}
           className="w-full h-48 object-cover rounded-lg"
