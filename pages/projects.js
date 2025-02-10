@@ -109,7 +109,7 @@ export default function Projects() {
         <p className="text-sm font-semibold text-white mb-6">
           Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amazing stuff</span>?
         </p>
-        <button onClick={openModal} className="bg-primary text-white p-4 rounded-lg hover:bg-warning hover:scale-105 transition-all">
+        <button onClick={openModal} className="bg-primary text-white text-sm p-4 rounded-lg hover:bg-warning hover:scale-105 transition-all">
           Let us Collaborate!
         </button>
       </div>
