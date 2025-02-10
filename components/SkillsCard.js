@@ -14,7 +14,7 @@ const SkillsCard = ({ icon, title, level }) => {
       </div>
 
       {/* Skill Title */}
-      <h3 className="text-sm font-semibold">{title}</h3>
+      <h3 className="sm:text-xs font-semibold">{title}</h3>
 
       {/* Progress Bar */}
       {level && (
