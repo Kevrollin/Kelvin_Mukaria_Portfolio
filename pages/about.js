@@ -6,17 +6,17 @@ export default function About() {
     <div className="min-h-screen flex-grow flex flex-col items-center bg-gray-900 text-white">
 
       {/* Main About Section */}
-      <main className="flex-grow flex-1 flex flex-col items-center justify-center py-4 sm:px-8">
+      <main className="flex-grow flex-1 flex flex-col items-center justify-center py-4 sm:px-8 sm:mx-8">
         <div>
-        <div className="w-full max-w-full flex flex-col md:flex-row px-4 items-center justify-center md:justify-center border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
+        <div className="flex flex-col md:flex-row px-8 items-center justify-center md:justify-center border border-gray-700 rounded-lg shadow-lg p-8 bg-gray-800">
           {/* Profile Image */}
-          <div className="w-80 h-80 md:w-96 md:h-96 mb-8 md:mb-0 relative">
+          <div className="w-60 h-60 mb-4 md:mb-0 relative">
             <Image
               src="/images/profile.jpg"
               alt="Kelvin Mukaria"
               width={250}
               height={250}
-              className="profile-blur rounded-full border-4 border-primary shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="profile-blur rounded-full justify-center border-4 border-primary shadow-lg transform hover:scale-105 transition-all duration-300"
             />
           </div>
 
@@ -96,7 +96,7 @@ export default function About() {
         
 
         {/* Expanded Sections */}
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-3">
           
           {/* Education & Certifications */}
           <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
