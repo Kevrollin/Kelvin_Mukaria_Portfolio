@@ -173,6 +173,7 @@ footer {
 /* Card container with light reflection effect */
 .skills{
   margin-bottom: 0;
+  height: 100vh;
 }
 
 .skill-card {

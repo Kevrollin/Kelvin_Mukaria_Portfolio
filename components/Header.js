@@ -28,34 +28,34 @@ const Header = () => {
       >
         Hire Me
       </button>
-      <div className="flex justify-center space-x-2 md:space-x-10 my-6">
+      <div className="flex justify-center space-x-2 my-6">
             <a
                 href="https://www.x.com/in/kevrollin012"
                 target="_blank"
                 className="text-blue-500 hover:text-blue-700 transition-all duration-300"
               >
-                <FaTwitter className="w-2 h-2" />
+                <FaTwitter className="w-3 h-3" />
               </a>
               <a
                 href="https://www.linkedin.com/in/kelvin-mukaria-98008b230?utm_sorce=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 className="text-blue-500 hover:text-blue-700 transition-all duration-300"
               >
-                <FaLinkedin className="w-2 h-2" />
+                <FaLinkedin className="w-3 h-3" />
               </a>
               <a
                 href="https://github.com/Kevrollin"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-all duration-300"
               >
-                <FaGithub className="w-2 h-2" />
+                <FaGithub className="w-3 h-3" />
               </a>
               <a
                 href="https://www.instagram.com/kev.mukaria?utm_source=qr&igsh=MWJ2cGF4cmNtOHIsaQ=="
                 target="_blank"
                 className="text-pink-500 hover:text-pink-700 transition-all duration-300"
               >
-                <FaInstagram className="w-2 h-2" />
+                <FaInstagram className="w-3 h-3" />
               </a>
             </div>
 

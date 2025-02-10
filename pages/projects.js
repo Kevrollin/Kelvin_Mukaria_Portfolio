@@ -56,12 +56,12 @@ export default function Projects() {
   ];
 
   return (
-    <div className="bg-gray-900">
+    <div className="container bg-gray-900">
       <div className="text-center lg:py-28 sm:py-16 sm:px-28">
-        <p className="text-2xl font-semibold text-white mb-6">
+        <p className="text-xl sm:text-xs font-semibold text-white mb-6">
           Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amazing stuff</span>?
         </p>
-        <button onClick={openModal} className="bg-primary text-white py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all">
+        <button onClick={openModal} className="bg-primary text-white p-4 rounded-lg hover:bg-warning hover:scale-105 transition-all">
           Let us Collaborate!
         </button>
       </div>
