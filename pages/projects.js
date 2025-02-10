@@ -1,5 +1,4 @@
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {

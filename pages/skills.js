@@ -124,7 +124,7 @@ const Skills = () => {
             onClick={openModal}
             className="bg-primary text-white py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all w-1/2"
           >
-            Let's Collaborate!
+            Let Collaborate!
           </button>
         </div>
       </div>
@@ -133,7 +133,7 @@ const Skills = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-3xl text-white mb-4">Let's Collaborate!</h3>
+            <h3 className="text-3xl text-white mb-4">Let Collaborate!</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <input

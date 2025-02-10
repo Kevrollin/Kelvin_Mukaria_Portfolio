@@ -55,7 +55,7 @@ export default function About() {
                 onClick={() => alert('Open Contact Modal')}
                 className="bg-warning text-gray-900 py-3 px-8 rounded-lg hover:bg-primary hover:text-white hover:scale-105 transition-all"
               >
-                Let's Connect
+                Let Connect
               </button>
             </div>
           </div>
@@ -146,11 +146,11 @@ export default function About() {
             <h3 className="text-3xl font-bold text-primary mb-4">What People Say About Me</h3>
             <div className="text-lg text-gray-300">
               <blockquote className="border-l-4 border-primary pl-4 italic">
-                "Kelvin is an exceptional developer with an eye for security. He not only builds, but ensures applications are **secure and efficient**!"  
+                Kelvin is an exceptional developer with an eye for security. He not only builds, but ensures applications are <strong>secure and efficient</strong>!
                 <span className="block text-warning mt-2">— Client, Web App Project</span>
               </blockquote>
               <blockquote className="border-l-4 border-primary pl-4 italic mt-4">
-                "His teaching style is **clear and professional**, making it easy for beginners to understand web development."  
+                His teaching style is <span>clear and professional</span>, making it easy for beginners to understand web development.
                 <span className="block text-warning mt-2">— Student, Web Dev Training</span>
               </blockquote>
             </div>

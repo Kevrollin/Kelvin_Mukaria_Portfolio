@@ -7,7 +7,7 @@ const SkillsCard = ({ icon, title, level }) => {
       <div className="flex justify-center mb-4">
         {/* Display an image icon for tech skills like Python logo */}
         {icon.includes('.svg') ? (
-          <img src={icon} alt={title} className="w-12 h-12 object-cover" />
+          <image src={icon} alt={title} className="w-12 h-12 object-cover" />
         ) : (
           <span className="material-icons text-primary text-6xl">{icon}</span>
         )}

@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center lg:py-28 sm:py-12 lg:px-28 border-4 border-primary rounded-3xl shadow-3xl">
           {/* About Text */}
           <div className="md:ml-10 text-center md:text-left max-w-2xl">
-            <h2 className="text-5xl font-semibold text-primary mb-6">I'm Kelvin, <br /> <span className='text-xl py-5 text-warning'>Web Developer | Cybersecurity | Programmer</span> </h2>
+            <h2 className="text-5xl font-semibold text-primary mb-6">I&apos; Kelvin, <br /> <span className='text-xl py-5 text-warning'>Web Developer | Cybersecurity | Programmer</span> </h2>
             <p className="mt-4 text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Passionate about <strong>web development and cybersecurity</strong>, I specialize in <strong>full-stack development</strong> using
               JavaScript, Python, Next.js, and C#. I love building scalable, secure, and high-performance applications.
