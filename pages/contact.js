@@ -13,7 +13,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg font-bold text-white py-28"
+          className="text-lg font-bold text-white"
         >
           Contact <span className="text-warning">Me!</span>
         </motion.h2>
