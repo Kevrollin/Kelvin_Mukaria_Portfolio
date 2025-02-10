@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsCard = ({ icon, title, level }) => {
   return (
-    <div className="bg-darkBg rounded-lg shadow-lg text-center hover:shadow-xl transition-all">
+    <div className="bg-darkBg p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-all">
       {/* Icon */}
       <div className="flex justify-center mb-4">
         {/* Display an image icon for tech skills like Python logo */}

@@ -88,15 +88,15 @@ const Skills = () => {
 
   return (
     <section className="skills py-10 bg-gray-900 text-white">
-      <h2 className="text-4xl text-dark font-semibold text-primary mb-12 text-center py-12">
+      <h2 className="text-5xl text-dark font-semibold text-primary mb-12 text-center py-12">
         Skills & <span className="text-warning">Technologies</span>
       </h2>
-      <div className="w-full text-center flex flex-col-2 items-center px-4 md:px-8">
+      <div className="w-full text-center flex flex-col items-center px-4 md:px-8">
         {/* Tech Skills and Soft Skills Layout */}
         <div className="flex flex-col sm:flex-col lg:flex-row justify-center gap-8 sm:gap-16">
           {/* Tech Skills */}
           <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-2xl font-semibold text-white mb-6">Tech Skills</h3>
+            <h3 className="text-4xl font-semibold text-white mb-6">Tech Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8">
               {techSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
@@ -106,7 +106,7 @@ const Skills = () => {
 
           {/* Soft Skills */}
           <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-2xl font-semibold text-warning mb-6">Soft Skills</h3>
+            <h3 className="text-4xl font-semibold text-warning mb-6">Soft Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {softSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
