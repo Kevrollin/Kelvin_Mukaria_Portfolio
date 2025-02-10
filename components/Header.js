@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r bg-gray-900 text-white py-8 px-6 sm:px-12 md:px-16 lg:px-24 flex flex-col items-center justify-center">
       <div className="container mx-auto bg-gradient-to-r from-gray-900 to-gray-800 text-white lg:py-12 sm:py-12 flex flex-col items-center justify-center rounded-lg shadow-lg hover:bg-blue-800 transition-all duration-300">
-      <h1 className="text-6xl font-bold mb-4 text-center">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center">
         Hi! It&apos;s <span className="text-warning">Kelvin</span><br/><br/>Ready to take your <strong className="text-primary">Business/Idea</strong><br/><br/>To the next Level?
       </h1><br/>
       <p className="text-xl mb-8 text-center">
@@ -28,7 +28,7 @@ const Header = () => {
         Hire Me
       </button>
       <br/>
-      <div className="flex justify-center space-x-6 my-6">
+      <div className="flex justify-center space-x-8 md:space-x-10 my-6">
       <span className="text-primary">--------------------------</span>
             <a
                 href="https://www.x.com/in/kevrollin012"
@@ -71,7 +71,7 @@ const Header = () => {
           onClick={closeModal}
         >
           <div
-            className="bg-gray-900 text-white rounded-lg p-10 w-11/12 md:w-1/3 shadow-xl border border-gray-700 flex flex-col items-center text-center"
+            className="bg-gray-900 text-white rounded-lg p-6 max-w-sm md:w-1/3 shadow-xl border border-gray-700"
             onClick={(e) => e.stopPropagation()}
           >
             <h2 className="text-3xl font-semibold text-gray-100 mb-6">

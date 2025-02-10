@@ -34,7 +34,8 @@ export default function Home() {
       <Header />
       <main className='flex-grow'>
       <section className="bg-gray-900 text-white lg:py-16 sm:px-28">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-warning mb-6 text-center py-8">About <span className='text-white'>Me</span> </h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-warning mb-6 text-center py-8">
+        About <span className='text-white'>Me</span> </h1>
         
         {/* About Section Wrapper with Border and Border Radius */}
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center lg:py-20 sm:py-10 px-6 md:px-14 border-4 border-primary rounded-3xl shadow-3xl">
