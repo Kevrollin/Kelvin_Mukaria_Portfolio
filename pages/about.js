@@ -6,9 +6,9 @@ export default function About() {
     <div className="min-h-screen flex-grow flex flex-col items-center bg-gray-900 text-white">
 
       {/* Main About Section */}
-      <main className="flex-grow flex-1 flex flex-col items-center justify-center px-12">
+      <main className="flex-grow flex-1 flex flex-col items-center justify-center py-12">
         <div>
-        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center md:justify-between border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
+        <div className="w-full max-w-full flex flex-col md:flex-row px-4 items-center justify-center md:justify-center border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
           {/* Profile Image */}
           <div className="w-80 h-80 md:w-96 md:h-96 mb-8 md:mb-0 relative">
             <Image
@@ -21,7 +21,7 @@ export default function About() {
           </div>
 
           {/* About Me Content */}
-          <div className="text-left md:ml-12 sm:text-center lg:text-left">
+          <div className="text-center md:text-left md:ml-8">
             <h1 className="text-2xl font-bold text-primary">Kelvin Mukaria</h1>
             <p className="text-xm text-warning mt-2">Web Developer | Cybersecurity Learner | Programmer</p>
 
@@ -43,7 +43,7 @@ export default function About() {
             </div>
 
             {/* Call to Action Buttons */}
-            <div className="mt-8 flex flex-col gap-6 lg:align-left lg:mx-0 sm:mx-18">
+            <div className="mt-8 flex flex-col gap-6 lg:align-left lg:mx-0 sm:mx-4">
               <a
                 href="/files/kelvin-mukaria-cv.pdf"
                 download

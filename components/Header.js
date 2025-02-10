@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <header className="mb-4 mt-2 bg-gradient-to-r bg-gray-900 text-white px-6 sm:px-12 md:px-16 lg:px-24 flex flex-col items-center justify-center">
+    <header className="bg-gradient-to-r bg-gray-900 text-white px-6 sm:px-12 md:px-16 lg:px-24 flex flex-col items-center justify-center">
       <div className="container mx-auto bg-gradient-to-r from-gray-900 to-gray-800 text-white lg:py-8 sm:py-12 flex flex-col items-center justify-center rounded-lg shadow-lg hover:bg-blue-800 transition-all duration-300">
       <p className="mt-5 mb-2 text-xm text-center">
         Web Developer | Cybersecurity Enthusiast | Passionate About Coding
