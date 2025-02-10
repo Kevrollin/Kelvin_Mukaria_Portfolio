@@ -120,11 +120,10 @@ export default function Home() {
             />
           </div>
         </div>
+        <div className='py-16 bg-gray-900'>
+          <Skills />
+        </div>
       </section>
-
-      <div className='py-16 bg-gray-900'>
-        <Skills />
-      </div>
       </main>
     </div>
   );
