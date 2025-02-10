@@ -87,7 +87,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills bg-gray-900 text-white">
+    <section className="skills py-8 bg-gray-900 text-white">
       <h2 className="text-xl font-semibold text-primary mb-12 text-center mb-5">
         Skills & <span className="text-warning">Technologies</span>
       </h2>
@@ -95,9 +95,9 @@ const Skills = () => {
         {/* Tech Skills and Soft Skills Layout */}
         <div className="flex flex-col sm:flex-col lg:flex-row justify-center gap-8 sm:gap-16">
           {/* Tech Skills */}
-          <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-xl font-semibold text-white mb-6">Tech Skills</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="w-full p-2 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
+            <h3 className="text-xl p-6 font-semibold text-white mb-6">Tech Skills</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {techSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
               ))}
@@ -105,9 +105,9 @@ const Skills = () => {
           </div>
 
           {/* Soft Skills */}
-          <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-xl font-semibold text-warning mb-6">Soft Skills</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="w-full p-2 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
+            <h3 className="text-xl p-6 font-semibold text-warning mb-6">Soft Skills</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {softSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
               ))}

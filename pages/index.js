@@ -34,17 +34,17 @@ export default function Home() {
       <Header />
       <main className='flex-grow'>
       <section className="bg-gray-900 text-white lg:py-16 px-4 sm:px-8">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-warning mb-4 text-center pt-6">
+      <h1 className="text-2xl sm:text-xl md:text-xl lg:text-5xl font-semibold text-warning mb-4 text-center pt-4">
         About <span className='text-white'>Me</span> </h1>
         
         {/* About Section Wrapper with Border and Border Radius */}
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center lg:py-20 sm:py-10 px-6 md:px-14 border-4 border-primary rounded-3xl shadow-3xl">
           {/* About Text */}
           <div className="md:ml-10 text-center md:text-left max-w-2xl">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold text-primary mt-4 mb-2">
+            <h2 className="text-xl sm:text-sm md:text-xl font-semibold text-primary mt-2 mb-2">
               I&apos;m Kelvin,
             </h2>
-            <span className='text-warning text-2xs'>Web Developer | Cybersecurity | Programmer</span>
+            <span className='text-warning text-xs'>Web Developer | Cybersecurity | Programmer</span>
 
             <p className="mt-4 lg:text-lg sm:text-sm text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Passionate about <strong>web development and cybersecurity</strong>, I specialize in <strong>full-stack development</strong> using
@@ -118,7 +118,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='py-4 bg-gray-900'>
+        <div className='bg-gray-900'>
           <Skills />
         </div>
       </section>

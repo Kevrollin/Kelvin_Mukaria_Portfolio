@@ -69,32 +69,6 @@ body.dark .text-gray-900 {
   padding: 5rem 0;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  color: #e2e8f0;
-}
-
-.about {
-  padding: 2rem 0;
-}
-
-.about h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #f7fafc;
-}
-
-.about p {
-  font-size: 1.25rem;
-  color: #e2e8f0;
-  margin-top: 1rem;
-}
 
 /* Navbar Styles */
 nav {
@@ -188,9 +162,6 @@ footer {
   text-align: center;
 }
 
-footer p {
-  font-size: 1rem;
-}
 
 /* Miscellaneous */
 .container {
