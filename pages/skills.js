@@ -116,7 +116,7 @@ const Skills = () => {
         </div>
 
         {/* New Section for Collaboration */}
-        <div className="text-center lg:py-8 sm:py-16 sm:px-28">
+        <div className="text-center lg:py-8 sm:py-16 sm:px-28 m-28">
           <p className="text-sm font-semibold text-white mb-6">
             Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amaizing stuff</span>?
           </p>
