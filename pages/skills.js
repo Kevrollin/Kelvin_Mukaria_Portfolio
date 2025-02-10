@@ -87,11 +87,11 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills py-16 bg-gray-900 text-white min-h-screen">
+    <section className="skills py-16 bg-gray-900 text-white">
       <h2 className="text-6xl text-dark font-semibold text-primary mb-12 text-center py-12">
         Skills & <span className="text-warning">Technologies</span>
       </h2>
-      <div className="container mx-auto text-center flex flex-col items-center sm:px-28 lg:px-0">
+      <div className="container mx-auto text-center flex flex-col items-center px-4 md:px-16">
         {/* Tech Skills and Soft Skills Layout */}
         <div className="flex flex-col sm:flex-col lg:flex-row justify-center gap-8 sm:gap-16">
           {/* Tech Skills */}

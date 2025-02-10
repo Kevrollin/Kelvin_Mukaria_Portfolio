@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='sm:py-28 lg:py-0 bg-gray-900'>
+      <div className='py-16 bg-gray-900 relative z-10'>
         <Skills />
       </div>
       </main>
