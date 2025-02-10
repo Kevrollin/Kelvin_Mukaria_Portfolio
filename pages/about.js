@@ -3,12 +3,12 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="min-h-screen py-10 w-full flex flex-col bg-gray-900 text-white">
+    <div className="min-h-screen py-16 px-6 w-full flex flex-col items-center bg-gray-900 text-white">
 
       {/* Main About Section */}
       <main className="flex-grow flex-1 flex flex-col items-center justify-center px-12">
         <div>
-        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center md:justify-between border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
           {/* Profile Image */}
           <div className="w-80 h-80 md:w-96 md:h-96 mb-8 md:mb-0 relative">
             <Image
@@ -22,18 +22,18 @@ export default function About() {
 
           {/* About Me Content */}
           <div className="text-left md:ml-12 sm:text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-primary">Kelvin Mukaria</h1>
+            <h1 className="text-xl font-bold text-primary">Kelvin Mukaria</h1>
             <p className="text-xl text-warning mt-2">Web Developer | Cybersecurity Learner | Programmer</p>
 
             <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-3xl">
-              Passionate about **full-stack development and cybersecurity**, I build **scalable, secure, and high-performance applications**.  
-              My expertise spans across **JavaScript, Python, C#, Java, Next.js, React, and Django**, focusing on **clean, efficient, and secure code**.
+              Passionate about <strong>full-stack development and cybersecurity</strong>, I build <strong>scalable, secure, and high-performance applications</strong>.
+              My expertise spans across <strong>JavaScript, Python, C#, Java, Next.js, React, and Django</strong>, focusing on <strong>clean, efficient, and secure code</strong>.
             </p>
 
             {/* Skills & Technologies */}
             <div className="mt-6 sm:py-7">
               <h2 className="text-2xl font-semibold text-white">Skills & Technologies</h2>
-              <div className="flex flex-wrap mt-4 gap-4 lg:justify-left lg:px-0 sm:px-28 sm:py-5">
+              <div className="flex flex-wrap mt-4 gap-3 lg:gap-4 justify-center md:justify-start">
                 {["JavaScript", "Python", "Next.js", "React", "Django", "Tailwind CSS", "Cybersecurity", "C#", "Java"].map(skill => (
                   <span key={skill} className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold">
                     {skill}
@@ -61,12 +61,12 @@ export default function About() {
           </div>
         </div>
         
-          <div className='flex flex-row gap-6 py-10 justify-center'>
-          <span className="text-primary">--------------------------</span>
+        <div className="flex items-center justify-center gap-5 py-6">
+
                       <a
                           href="https://www.x.com/in/kevrollin012"
                           target="_blank"
-                          className="text-blue-500 hover:text-blue-700 transition-all duration-300"
+                          className="text-blue-400 hover:text-blue-600 transition-all duration-300"
                         >
                           <FaTwitter className="w-6 h-6" />
                         </a>
@@ -91,42 +91,42 @@ export default function About() {
                         >
                           <FaInstagram className="w-6 h-6" />
                         </a>
-                        <br/>
-                        <span className="text-primary">--------------------------</span>
           </div>
           </div>
         
 
         {/* Expanded Sections */}
-        <div className="w-full max-w-6xl mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
           
           {/* Education & Certifications */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
-            <h3 className="text-3xl font-bold text-primary mb-4">Education & Certifications</h3>
-            <ul className="text-lg text-gray-300 space-y-3">
-              <li>🎓 Bachelor’s in Computer Science - [Your University]</li>
-              <li>📜 Certified in Cybersecurity Essentials</li>
-              <li>🖥️ Web Development Bootcamp Graduate</li>
-            </ul>
+          <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-md border border-gray-700">
+              <h3 className="text-2xl font-semibold text-primary mb-3">Education & Certifications</h3>
+              <ul className="text-lg text-gray-300 space-y-3">
+                <li>🎓 Bachelors in Computer Science - Egerton University</li>
+                <li>📜 Certified in Cybersecurity Essentials</li>
+                <li>🖥️ Web Development Bootcamp Graduate</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-lg shadow-md border border-gray-700">
+              <h3 className="text-2xl font-semibold text-primary mb-3">Work Experience</h3>
+              <ul className="text-lg text-gray-300 space-y-3">
+                <li>💻 Freelance Web Developer (Built scalable applications)</li>
+                <li>🔐 Cybersecurity Researcher (Website security & penetration testing)</li>
+                <li>🌍 Community Trainer (Helping beginners learn programming)</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Work Experience */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
-            <h3 className="text-3xl font-bold text-primary mb-4">Work Experience</h3>
-            <ul className="text-lg text-gray-300 space-y-3">
-              <li>💻 Freelance Web Developer (Built scalable applications for various clients)</li>
-              <li>🔐 Cybersecurity Researcher (Specializing in website security & penetration testing)</li>
-              <li>🌍 Community Trainer (Helping beginners learn web development & programming)</li>
-            </ul>
-          </div>
 
           {/* My Approach & Philosophy */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
             <h3 className="text-3xl font-bold text-primary mb-4">My Approach & Philosophy</h3>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              I believe in **writing clean, efficient, and secure code** that not only meets the client’s requirements but also 
-              ensures scalability and maintainability. I strive to **stay updated** with the latest technologies, adopt 
-              **best coding practices**, and contribute to **open-source projects** whenever possible.
+            <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-3xl">
+              I believe in <strong>writing clean, efficient, and secure code</strong> that not only meets the client’s requirements but also 
+              ensures scalability and maintainability. I strive to <strong>stay updated</strong> with the latest technologies, adopt 
+              <strong>best coding practices</strong>, and contribute to <strong>open-source projects</strong> whenever possible.
             </p>
           </div>
 
@@ -134,16 +134,16 @@ export default function About() {
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
             <h3 className="text-3xl font-bold text-primary mb-4">Career Growth Timeline</h3>
             <ul className="text-lg text-gray-300 space-y-3">
-              <li>🚀 **2023** - Started Web Development & Cybersecurity Learning</li>
-              <li>💡 **2024** - Built multiple full-stack projects & started community training</li>
-              <li>🔒 **2025** - Developed security tools & contributed to open-source</li>
-              <li>🌟 **Future** - Keep growing, collaborating, and innovating!</li>
+              <li>🚀 <strong>2023</strong> - Started Web Development & Cybersecurity Learning</li>
+              <li>💡 <strong>2024</strong> - Built multiple full-stack projects & started community training</li>
+              <li>🔒 <strong>2025</strong> - Developed security tools & contributed to open-source</li>
+              <li>🌟 <strong>Future</strong> - Keep growing, Learning, collaborating, and innovating!</li>
             </ul>
           </div>
 
           {/* Testimonials */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
-            <h3 className="text-3xl font-bold text-primary mb-4">What People Say About Me</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">What People Say About Me</h3>
             <div className="text-lg text-gray-300">
               <blockquote className="border-l-4 border-primary pl-4 italic">
                 Kelvin is an exceptional developer with an eye for security. He not only builds, but ensures applications are <strong>secure and efficient</strong>!

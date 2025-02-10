@@ -258,6 +258,16 @@ footer p {
   animation: twinkle 1.5s infinite alternate;
 }
 
+.profile-blur {
+  filter: blur(4px); /* Adjust the blur level */
+  transition: filter 0.3s ease-in-out;
+}
+
+.profile-blur:hover {
+  filter: blur(2px); /* Reduce blur slightly on hover */
+}
+
+
 @keyframes twinkle {
   0% {
     opacity: 0.5;
