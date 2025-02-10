@@ -41,19 +41,19 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center lg:py-20 sm:py-10 px-6 md:px-14 border-4 border-primary rounded-3xl shadow-3xl">
           {/* About Text */}
           <div className="md:ml-10 text-center md:text-left max-w-2xl">
-            <h2 className="text-xl sm:text-sm md:text-xl font-semibold text-primary mt-2 mb-2">
+            <h2 className="text-xl sm:text-lg md:text-xl font-semibold text-primary mt-2 mb-2">
               I&apos;m Kelvin,
             </h2>
             <span className='text-warning text-xs'>Web Developer | Cybersecurity | Programmer</span>
 
-            <p className="mt-4 lg:text-lg sm:text-sm text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="mt-4 text-lg sm:text-sm md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Passionate about <strong>web development and cybersecurity</strong>, I specialize in <strong>full-stack development</strong> using
               JavaScript, Python, Next.js, and C#. I love building scalable, secure, and high-performance applications. My expertise lies in crafting 
               <strong>interactive web experiences</strong> and implementing <strong>strong cybersecurity principles</strong>.
             </p>
 
             {/* Social Icons */}
-            <div className="mt-8 flex justify-center md:justify-start text-white space-x-4">
+            <div className="mt-6 flex justify-center md:justify-start text-white space-x-4">
               <a
                 href="https://linkedin.com/in/kelvin-mukaria-98008b230?utm_sorce=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  // Replace with your actual LinkedIn profile URL
                 target="_blank"

@@ -3,10 +3,10 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex-grow flex flex-col items-center bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col bg-gray-900">
 
       {/* Main About Section */}
-      <main className="flex-grow flex-1 flex flex-col items-center justify-center px-12">
+      <main className="flex-grow items-center justify-center py-12">
         <div>
         <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-center md:justify-between border border-gray-700 rounded-lg shadow-lg p-10 bg-gray-800">
           {/* Profile Image */}

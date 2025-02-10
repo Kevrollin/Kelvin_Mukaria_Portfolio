@@ -45,22 +45,22 @@ const Navbar = () => {
 
         {/* Mobile Menu - Opened state */}
         {isOpen && (
-          <div className="fixed bg-black inset-0 bg-opacity-60 z-50">
+          <div className="fixed bg-black inset-0 bg-opacity-30 z-50 p-5">
             <div className="flex justify-between items-center p-5 bg-gray-900 text-white">
-              <span className="text-xl font-bold">Menu</span>
-              <button onClick={toggleMenu} className="text-white text-3xl">✖</button>
+              <span className="text-xl justify-center font-bold">Menu</span>
+              <button onClick={toggleMenu} className="justify-center text-white text-3xl">✖</button>
             </div>
             <div className="flex flex-col items-center justify-center h-[20vh] bg-gray-900 text-white space-y-6">
-              <Link href="/" className="text-xl font-semibold hover:text-yellow-400" onClick={toggleMenu}>
+              <Link href="/" className="text-sm font-semibold hover:text-yellow-400" onClick={toggleMenu}>
                 Home
               </Link>
-              <Link href="/about" className="text-xl font-semibold hover:text-yellow-400" onClick={toggleMenu}>
+              <Link href="/about" className="text-sm font-semibold hover:text-yellow-400" onClick={toggleMenu}>
                 About
               </Link>
-              <Link href="/projects" className="text-xl font-semibold hover:text-yellow-400" onClick={toggleMenu}>
+              <Link href="/projects" className="text-sm font-semibold hover:text-yellow-400" onClick={toggleMenu}>
                 Projects
               </Link>
-              <Link href="/contact" className="text-xl font-semibold hover:text-yellow-400" onClick={toggleMenu}>
+              <Link href="/contact" className="text-sm font-semibold hover:text-yellow-400" onClick={toggleMenu}>
                 Contact
               </Link>
             </div>
