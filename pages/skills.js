@@ -93,27 +93,28 @@ const Skills = () => {
       </h2>
       <div className="w-full text-center flex flex-col items-center px-4">
         {/* Tech Skills and Soft Skills Layout */}
-        <div className="flex flex-col sm:flex-col lg:flex-row justify-center gap-8 sm:gap-16">
-          {/* Tech Skills */}
-          <div className="w-full p-2 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-xl p-6 font-semibold text-white mb-6">Tech Skills</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {techSkills.map((skill, index) => (
-                <SkillsCard key={index} {...skill} />
-              ))}
-            </div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:flex lg:justify-center">
+  {/* Tech Skills */}
+  <div className="w-full p-4 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg">
+    <h3 className="text-base sm:text-lg font-semibold text-white mb-4 sm:mb-6">Tech Skills</h3>
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4">
+      {techSkills.map((skill, index) => (
+        <SkillsCard key={index} {...skill} />
+      ))}
+    </div>
+  </div>
 
-          {/* Soft Skills */}
-          <div className="w-full p-2 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-xl p-6 font-semibold text-warning mb-6">Soft Skills</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {softSkills.map((skill, index) => (
-                <SkillsCard key={index} {...skill} />
-              ))}
-            </div>
-          </div>
-        </div>
+  {/* Soft Skills */}
+  <div className="w-full p-4 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg">
+    <h3 className="text-base sm:text-lg font-semibold text-warning mb-4 sm:mb-6">Soft Skills</h3>
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-4">
+      {softSkills.map((skill, index) => (
+        <SkillsCard key={index} {...skill} />
+      ))}
+    </div>
+  </div>
+</div>
+
 
         {/* New Section for Collaboration */}
         <div className="text-center lg:py-8 sm:py-16 sm:px-28 m-28">
