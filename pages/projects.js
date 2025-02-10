@@ -7,9 +7,9 @@ import ProjectCard from '../components/ProjectCard';
 export default function Projects() {
   const [isClient, setIsClient] = useState(false);
 
-useEffect(() => {
-  setIsClient(true);
-}, []);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -19,10 +19,6 @@ useEffect(() => {
     projectTitle: "",
   });
   const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -44,7 +40,6 @@ useEffect(() => {
     setFormData({ name: "", email: "", phone: "", projectTitle: "" });
   };
 
-
   const projects = [
     {
       title: 'Plant Sale Website',
@@ -59,7 +54,6 @@ useEffect(() => {
       image: '/assets/vulnerability-scanner.png',
     }
   ];
-  
 
   return (
     <div className="bg-gray-900">
