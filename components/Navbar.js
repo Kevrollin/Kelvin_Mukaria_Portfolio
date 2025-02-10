@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed p-5 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
+    <nav className={`p-5 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-white'} transition-all duration-300`}>
