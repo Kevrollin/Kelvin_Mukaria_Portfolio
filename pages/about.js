@@ -3,7 +3,7 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="min-h-screen py-16 px-6 w-full flex flex-col items-center bg-gray-900 text-white">
+    <div className="min-h-screen flex-grow flex flex-col items-center bg-gray-900 text-white">
 
       {/* Main About Section */}
       <main className="flex-grow flex-1 flex flex-col items-center justify-center px-12">
@@ -16,23 +16,23 @@ export default function About() {
               alt="Kelvin Mukaria"
               width={320}
               height={320}
-              className="rounded-full border-4 border-primary shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="profile-blur rounded-full border-4 border-primary shadow-lg transform hover:scale-105 transition-all duration-300"
             />
           </div>
 
           {/* About Me Content */}
           <div className="text-left md:ml-12 sm:text-center lg:text-left">
-            <h1 className="text-xl font-bold text-primary">Kelvin Mukaria</h1>
-            <p className="text-xl text-warning mt-2">Web Developer | Cybersecurity Learner | Programmer</p>
+            <h1 className="text-2xl font-bold text-primary">Kelvin Mukaria</h1>
+            <p className="text-xm text-warning mt-2">Web Developer | Cybersecurity Learner | Programmer</p>
 
-            <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-3xl">
+            <p className="mt-6 text-sm text-gray-300 leading-relaxed max-w-3xl">
               Passionate about <strong>full-stack development and cybersecurity</strong>, I build <strong>scalable, secure, and high-performance applications</strong>.
               My expertise spans across <strong>JavaScript, Python, C#, Java, Next.js, React, and Django</strong>, focusing on <strong>clean, efficient, and secure code</strong>.
             </p>
 
             {/* Skills & Technologies */}
             <div className="mt-6 sm:py-7">
-              <h2 className="text-2xl font-semibold text-white">Skills & Technologies</h2>
+              <h2 className="text-2xl font-semibold text-white text-warning">Skills & <span className='text-white'>Technologies</span></h2>
               <div className="flex flex-wrap mt-4 gap-3 lg:gap-4 justify-center md:justify-start">
                 {["JavaScript", "Python", "Next.js", "React", "Django", "Tailwind CSS", "Cybersecurity", "C#", "Java"].map(skill => (
                   <span key={skill} className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold">
@@ -43,17 +43,17 @@ export default function About() {
             </div>
 
             {/* Call to Action Buttons */}
-            <div className="mt-8 flex gap-6 lg:align-left lg:mx-0 sm:mx-28">
+            <div className="mt-8 flex flex-col gap-6 lg:align-left lg:mx-0 sm:mx-18">
               <a
                 href="/files/kelvin-mukaria-cv.pdf"
                 download
-                className="bg-primary text-white py-3 px-8 rounded-lg hover:bg-warning hover:scale-105 transition-all"
+                className="bg-primary text-white py-3 px-3 rounded-lg hover:bg-warning hover:scale-105 transition-all"
               >
                 Download CV
               </a>
               <button
                 onClick={() => alert('Open Contact Modal')}
-                className="bg-warning text-gray-900 py-3 px-8 rounded-lg hover:bg-primary hover:text-white hover:scale-105 transition-all"
+                className="bg-warning text-gray-900 py-3 px-3 rounded-lg hover:bg-primary hover:text-white hover:scale-105 transition-all"
               >
                 Let Connect
               </button>
@@ -68,41 +68,41 @@ export default function About() {
                           target="_blank"
                           className="text-blue-400 hover:text-blue-600 transition-all duration-300"
                         >
-                          <FaTwitter className="w-6 h-6" />
+                          <FaTwitter className="w-4 h-4" />
                         </a>
                         <a
                           href="https://www.linkedin.com/in/kelvin-mukaria-98008b230?utm_sorce=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                           target="_blank"
                           className="text-blue-500 hover:text-blue-700 transition-all duration-300"
                         >
-                          <FaLinkedin className="w-6 h-6" />
+                          <FaLinkedin className="w-4 h-4" />
                         </a>
                         <a
                           href="https://github.com/Kevrollin"
                           target="_blank"
                           className="text-gray-400 hover:text-white transition-all duration-300"
                         >
-                          <FaGithub className="w-6 h-6" />
+                          <FaGithub className="w-4 h-4" />
                         </a>
                         <a
                           href="https://www.instagram.com/kev.mukaria?utm_source=qr&igsh=MWJ2cGF4cmNtOHIsaQ=="
                           target="_blank"
                           className="text-pink-500 hover:text-pink-700 transition-all duration-300"
                         >
-                          <FaInstagram className="w-6 h-6" />
+                          <FaInstagram className="w-4 h-4" />
                         </a>
           </div>
           </div>
         
 
         {/* Expanded Sections */}
-        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
+        <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
           
           {/* Education & Certifications */}
           <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 mt-10">
             <div className="bg-gray-800 p-8 rounded-lg shadow-md border border-gray-700">
-              <h3 className="text-2xl font-semibold text-primary mb-3">Education & Certifications</h3>
-              <ul className="text-lg text-gray-300 space-y-3">
+              <h3 className="text-lg font-semibold text-primary mb-3">Education & Certifications</h3>
+              <ul className="text-sm text-gray-300 space-y-3">
                 <li>🎓 Bachelors in Computer Science - Egerton University</li>
                 <li>📜 Certified in Cybersecurity Essentials</li>
                 <li>🖥️ Web Development Bootcamp Graduate</li>
@@ -110,8 +110,8 @@ export default function About() {
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg shadow-md border border-gray-700">
-              <h3 className="text-2xl font-semibold text-primary mb-3">Work Experience</h3>
-              <ul className="text-lg text-gray-300 space-y-3">
+              <h3 className="text-lg font-semibold text-primary mb-3">Work Experience</h3>
+              <ul className="text-sm text-gray-300 space-y-3">
                 <li>💻 Freelance Web Developer (Built scalable applications)</li>
                 <li>🔐 Cybersecurity Researcher (Website security & penetration testing)</li>
                 <li>🌍 Community Trainer (Helping beginners learn programming)</li>
@@ -122,8 +122,8 @@ export default function About() {
 
           {/* My Approach & Philosophy */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
-            <h3 className="text-3xl font-bold text-primary mb-4">My Approach & Philosophy</h3>
-            <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-3xl">
+            <h3 className="text-lg font-bold text-primary mb-4">My Approach & Philosophy</h3>
+            <p className="mt-6 text-sm text-gray-300 leading-relaxed max-w-3xl">
               I believe in <strong>writing clean, efficient, and secure code</strong> that not only meets the client’s requirements but also 
               ensures scalability and maintainability. I strive to <strong>stay updated</strong> with the latest technologies, adopt 
               <strong>best coding practices</strong>, and contribute to <strong>open-source projects</strong> whenever possible.
@@ -132,8 +132,8 @@ export default function About() {
 
           {/* Career Growth Timeline */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
-            <h3 className="text-3xl font-bold text-primary mb-4">Career Growth Timeline</h3>
-            <ul className="text-lg text-gray-300 space-y-3">
+            <h3 className="text-lg font-bold text-primary mb-4">Career Growth Timeline</h3>
+            <ul className="text-sm text-gray-300 space-y-3">
               <li>🚀 <strong>2023</strong> - Started Web Development & Cybersecurity Learning</li>
               <li>💡 <strong>2024</strong> - Built multiple full-stack projects & started community training</li>
               <li>🔒 <strong>2025</strong> - Developed security tools & contributed to open-source</li>
@@ -143,8 +143,8 @@ export default function About() {
 
           {/* Testimonials */}
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold text-primary mb-4">What People Say About Me</h3>
-            <div className="text-lg text-gray-300">
+            <h3 className="text-lg font-bold text-primary mb-4">What People Say About Me</h3>
+            <div className="text-sm text-gray-300">
               <blockquote className="border-l-4 border-primary pl-4 italic">
                 Kelvin is an exceptional developer with an eye for security. He not only builds, but ensures applications are <strong>secure and efficient</strong>!
                 <span className="block text-warning mt-2">— Client, Web App Project</span>

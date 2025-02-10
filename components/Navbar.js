@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu - Opened state */}
         {isOpen && (
-          <div className="fixed bg-black bg-opacity-60 z-50">
+          <div className="fixed bg-black inset-0 bg-opacity-60 z-50">
             <div className="flex justify-between items-center p-5 bg-gray-900 text-white">
               <span className="text-xl font-bold">Menu</span>
               <button onClick={toggleMenu} className="text-white text-3xl">✖</button>
