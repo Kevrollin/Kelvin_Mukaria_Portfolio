@@ -33,7 +33,7 @@ export default function Home() {
       {/* Hero Section */}
       <Header />
       <main className='flex-grow'>
-      <section className="bg-gray-900 text-white lg:py-16 sm:px-28">
+      <section className="bg-gray-900 text-white lg:py-16 px-4 sm:px-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-warning mb-6 text-center py-8">
         About <span className='text-white'>Me</span> </h1>
         
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='py-16 bg-gray-900 relative z-10'>
+      <div className='py-16 bg-gray-900'>
         <Skills />
       </div>
       </main>
