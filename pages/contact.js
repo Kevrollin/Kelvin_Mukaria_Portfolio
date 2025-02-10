@@ -1,34 +1,56 @@
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    
-    <div className='py-'>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="py-10"
+    >
       <main className="h-screen p-10 text-center bg-gray-900">
-        <h2 className="text-lg font-bold text-white py-28">Contact <span className='text-warning'>Me!</span></h2>
-        <form className="mt-8 max-w-3xl mx-auto py-4">
-          <input
+        <motion.h2
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-lg font-bold text-white py-28"
+        >
+          Contact <span className="text-warning">Me!</span>
+        </motion.h2>
+
+        <motion.form
+          className="mt-8 max-w-3xl mx-auto py-4"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+        >
+          <motion.input
             type="text"
             placeholder="Your Name"
             className="w-full p-4 mb-4 rounded-md bg-gray-800 text-white"
+            whileFocus={{ scale: 1.05 }}
           />
-          <input
+          <motion.input
             type="email"
             placeholder="Your Email"
             className="w-full p-4 mb-4 rounded-md bg-gray-800 text-white"
+            whileFocus={{ scale: 1.05 }}
           />
-          <textarea
+          <motion.textarea
             placeholder="Your Message"
             className="w-full p-4 mb-4 rounded-md bg-gray-800 text-white"
-          ></textarea>
-          <button
+            whileFocus={{ scale: 1.05 }}
+          ></motion.textarea>
+          <motion.button
             type="submit"
-            className="px-2 py-2 text-sm rounded-md bg-blue-500 text-white hover:bg-warning"
+            className="px-4 py-2 text-sm rounded-md bg-blue-500 text-white hover:bg-warning"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.2 }}
           >
             Send Message
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </main>
-      
-    </div>
-  )
+    </motion.div>
+  );
 }
