@@ -26,16 +26,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`p-5 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
+    <nav className={`p-4 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-white'} transition-all duration-300`}>
+        <Link href="/" className={`text-lg font-bold ${darkMode ? 'text-white' : 'text-white'} transition-all duration-300`}>
           KM
         </Link>
 
         {/* Dark Mode Toggle */}
-        <button onClick={toggleDarkMode} className="text-gray-500 dark:text-white transition-all duration-300 hover:text-yellow-400">
-          {darkMode ? 'LIGHT' : 'DARK'}
+        <button onClick={toggleDarkMode} className="text-sm text-gray-500 dark:text-white transition-all duration-300 hover:text-yellow-400">
+          {darkMode ? '<>' : '</>'}
         </button>
 
         {/* Mobile Hamburger Menu */}

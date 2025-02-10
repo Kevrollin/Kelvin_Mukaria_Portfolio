@@ -14,16 +14,17 @@ const Header = () => {
 
   return (
     <header className="py-8 bg-gradient-to-r bg-gray-900 text-white py-8 px-6 sm:px-12 md:px-16 lg:px-24 flex flex-col items-center justify-center">
-      <div className="container mx-auto bg-gradient-to-r from-gray-900 to-gray-800 text-white lg:py-12 sm:py-12 flex flex-col items-center justify-center rounded-lg shadow-lg hover:bg-blue-800 transition-all duration-300">
-      <h1 className="text-xl sm:text-xl md:text-xl font-bold mb-4 text-center">
-        Hi! It&apos;s <span className="text-warning">Kelvin</span><br/><br/>Ready to take your <strong className="text-primary">Business/Idea</strong><br/><br/>To the next Level?
-      </h1><br/>
-      <p className="mb-4 text-sm text-center">
+      <div className="container mx-auto bg-gradient-to-r from-gray-900 to-gray-800 text-white lg:py-8 sm:py-12 flex flex-col items-center justify-center rounded-lg shadow-lg hover:bg-blue-800 transition-all duration-300">
+      <p className="mt-5 mb-2 text-xm text-center">
         Web Developer | Cybersecurity Enthusiast | Passionate About Coding
-      </p><br/><br/>
+      </p>
+      <h1 className="text-xl sm:text-xl md:text-xl font-bold m-4 text-center">
+        Hi! It&apos;s <span className="text-warning">Kelvin</span>Ready to take your <strong className="text-primary">Business/Idea</strong>To the next Level?
+      </h1>
+
       <button
         onClick={openModal}
-        className="bg-blue-700 text-white text-sm px-2 rounded-lg shadow-lg hover:bg-warning transition-all duration-300"
+        className="bg-blue-700 text-white text-sm p-5 rounded-lg shadow-lg hover:bg-warning transition-all duration-300"
       >
         Hire Me
       </button>

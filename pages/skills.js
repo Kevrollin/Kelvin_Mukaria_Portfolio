@@ -87,16 +87,16 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills py-10 bg-gray-900 text-white">
-      <h2 className="text-5xl text-dark font-semibold text-primary mb-12 text-center py-12">
+    <section className="skills bg-gray-900 text-white">
+      <h2 className="text-xl font-semibold text-primary mb-12 text-center mb-5">
         Skills & <span className="text-warning">Technologies</span>
       </h2>
-      <div className="w-full text-center flex flex-col items-center px-4 md:px-8">
+      <div className="w-full text-center flex flex-col items-center px-4">
         {/* Tech Skills and Soft Skills Layout */}
         <div className="flex flex-col sm:flex-col lg:flex-row justify-center gap-8 sm:gap-16">
           {/* Tech Skills */}
           <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-4xl font-semibold text-white mb-6">Tech Skills</h3>
+            <h3 className="text-xl font-semibold text-white mb-6">Tech Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8">
               {techSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
@@ -106,7 +106,7 @@ const Skills = () => {
 
           {/* Soft Skills */}
           <div className="w-full p-6 bg-gray-800 bg-opacity-80 border border-gray-600 rounded-lg shadow-lg skill-card">
-            <h3 className="text-4xl font-semibold text-warning mb-6">Soft Skills</h3>
+            <h3 className="text-xl font-semibold text-warning mb-6">Soft Skills</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {softSkills.map((skill, index) => (
                 <SkillsCard key={index} {...skill} />
@@ -116,13 +116,13 @@ const Skills = () => {
         </div>
 
         {/* New Section for Collaboration */}
-        <div className="text-center lg:py-28 sm:py-16 sm:px-28">
-          <p className="text-2xl font-semibold text-white mb-6">
+        <div className="text-center lg:py-8 sm:py-16 sm:px-28">
+          <p className="text-sm font-semibold text-white mb-6">
             Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amaizing stuff</span>?
           </p>
           <button
             onClick={openModal}
-            className="bg-primary text-white py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all"
+            className="bg-primary text-white text-sm py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all"
           >
             Let Collaborate!
           </button>
@@ -133,7 +133,7 @@ const Skills = () => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
-            <h3 className="text-3xl text-white mb-4">Let Collaborate!</h3>
+            <h3 className="text-xl text-white mb-4">Let Collaborate!</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <input
@@ -142,7 +142,7 @@ const Skills = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your Name"
-                  className="w-full p-3 bg-gray-700 text-white rounded-lg"
+                  className="w-full p-2 bg-gray-700 text-white rounded-lg"
                   required
                 />
               </div>
@@ -153,7 +153,7 @@ const Skills = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Your Email"
-                  className="w-full p-3 bg-gray-700 text-white rounded-lg"
+                  className="w-full p-2 bg-gray-700 text-white rounded-lg"
                   required
                 />
               </div>
@@ -164,7 +164,7 @@ const Skills = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Your Phone Number"
-                  className="w-full p-3 bg-gray-700 text-white rounded-lg"
+                  className="w-full p-2 bg-gray-700 text-white rounded-lg"
                 />
               </div>
               <div>
@@ -173,7 +173,7 @@ const Skills = () => {
                   value={formData.projectTitle}
                   onChange={handleChange}
                   placeholder="Your Project Title/Idea"
-                  className="w-full p-3 bg-gray-700 text-white rounded-lg"
+                  className="w-full p-2 bg-gray-700 text-white rounded-lg"
                   rows="4"
                   required
                 />
@@ -182,16 +182,16 @@ const Skills = () => {
               {/* Social Media Icons */}
               <div className="flex justify-center gap-4 mb-4">
                 <a href="https://www.x.com/kevrollin012" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter size={18} className="text-white hover:text-blue-500" />
+                  <FaTwitter size={18} className="text-sm text-white hover:text-blue-500" />
                 </a>
                 <a href="https://instagram.com/kev.mukaria?utm_source=qr&igsh=MWJ2cGF4cmNtOHIsaQ==" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram size={18} className="text-white hover:text-blue-400" />
+                  <FaInstagram size={18} className="text-sm text-white hover:text-blue-400" />
                 </a>
                 <a href="https://www.linkedin.com/in/kelvin-mukaria-98008b230?utm_sorce=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin size={18} className="text-white hover:text-blue-700" />
+                  <FaLinkedin size={18} className="text-sm text-white hover:text-blue-700" />
                 </a>
                 <a href="https://github.com/Kevrollin" target="_blank" rel="noopener noreferrer">
-                  <FaGithub size={18} className="text-white hover:text-black" />
+                  <FaGithub size={18} className="text-sm text-white hover:text-black" />
                 </a>
               </div>
 
@@ -199,16 +199,16 @@ const Skills = () => {
               <div>
                 <button
                   type="submit"
-                  className="bg-warning text-white py-3 px-8 rounded-lg hover:bg-primary hover:scale-105 transition-all"
+                  className="bg-warning text-sm text-white py-3 px-8 rounded-lg hover:bg-primary hover:scale-105 transition-all"
                 >
                   Send
                 </button>
               </div>
             </form>
-            {message && <p className="text-lg text-white mt-4">{message}</p>}
+            {message && <p className="text-sm p-6 text-white">{message}</p>}
             <button
               onClick={closeModal}
-              className="bg-primary text-white py-3 px-8 rounded-lg hover:bg-warning hover:scale-105 transition-all mt-4"
+              className="bg-primary text-sm text-white py-2 px-4 rounded-lg hover:bg-warning hover:scale-105 transition-all mt-4"
             >
               Close
             </button>

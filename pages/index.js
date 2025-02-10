@@ -41,12 +41,12 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center lg:py-20 sm:py-10 px-6 md:px-14 border-4 border-primary rounded-3xl shadow-3xl">
           {/* About Text */}
           <div className="md:ml-10 text-center md:text-left max-w-2xl">
-            <h2 className="text-xl sm:text-4xl md:text-5xl font-semibold text-primary mb-4">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold text-primary mt-4 mb-2">
               I&apos;m Kelvin,
             </h2>
-            <span className='text-warning text-xs'>Web Developer | Cybersecurity | Programmer</span>
+            <span className='text-warning text-2xs'>Web Developer | Cybersecurity | Programmer</span>
 
-            <p className="mt-4 lg:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="mt-4 lg:text-lg sm:text-sm text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Passionate about <strong>web development and cybersecurity</strong>, I specialize in <strong>full-stack development</strong> using
               JavaScript, Python, Next.js, and C#. I love building scalable, secure, and high-performance applications. My expertise lies in crafting 
               <strong>interactive web experiences</strong> and implementing <strong>strong cybersecurity principles</strong>.
@@ -60,7 +60,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-warning transition-all"
               >
-                <i className="fab fa-linkedin-in text-xl"></i>
+                <i className="fab fa-linkedin-in text-sm"></i>
               </a>
               <a
                 href="https://github.com/Kevrollin"  // Replace with your actual GitHub profile URL
@@ -68,7 +68,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-warning transition-all"
               >
-                <i className="fab fa-github text-xl"></i>
+                <i className="fab fa-github text-sm"></i>
               </a>
               <a
                 href="https://x.com/kevrollin012"  // Replace with your actual Twitter profile URL
@@ -76,7 +76,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-warning transition-all"
               >
-                <i className="fab fa-x text-xl"></i>
+                <i className="fab fa-x text-sm"></i>
               </a>
               <a
                 href="https://instagram.com/kev.mukaria?utm_source=qr&igsh=MWJ2cGF4cmNtOHIsaQ=="  // Replace with your actual Twitter profile URL
@@ -84,7 +84,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-white hover:text-warning transition-all"
               >
-                <i className="fab fa-instagram text-xl"></i>
+                <i className="fab fa-instagram text-sm"></i>
               </a>
             </div>
 
@@ -118,7 +118,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className='py-16 bg-gray-900'>
+        <div className='py-4 bg-gray-900'>
           <Skills />
         </div>
       </section>
