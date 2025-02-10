@@ -5,14 +5,19 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import ProjectCard from '../components/ProjectCard';
 
 export default function Projects() {
-  const isClient = typeof window !== "undefined";
+  const [isClient, setIsClient] = useState(false);
+
+useEffect(() => {
+  setIsClient(true);
+}, []);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const formData ={
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     projectTitle: "",
-  };
+  });
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -38,6 +43,23 @@ export default function Projects() {
 
     setFormData({ name: "", email: "", phone: "", projectTitle: "" });
   };
+
+
+  const projects = [
+    {
+      title: 'Plant Sale Website',
+      description: 'A fully responsive e-commerce site for selling plants.',
+      link: 'https://github.com/your-username/plant-sale-website',
+      image: '/assets/plant-sale.png',
+    },
+    {
+      title: 'Vulnerability Scanner',
+      description: 'A tool to scan websites for potential vulnerabilities.',
+      link: 'https://github.com/your-username/vulnerability-scanner',
+      image: '/assets/vulnerability-scanner.png',
+    }
+  ];
+  
 
   return (
     <div className="bg-gray-900">
