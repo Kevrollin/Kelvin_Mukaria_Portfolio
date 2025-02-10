@@ -2,10 +2,10 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-footerBg text-footerText py-8 px-6 md:px-16 text-center">
+    <footer className="bg-footerBg text-footerText py-4 px-6 md:px-16 text-center">
       <div className="container mx-auto text-center">
         {/* Copyright Text */}
-        <p className="text-white lg:text-xs sm:text-sm md:text-lg mb-4">
+        <p className="text-white text-sm sm:text-xs md:text-lg mb-4">
           © 2025 Kelvin Mukaria. <span className="text-warning">All Rights Reserved.</span>
         </p>
 

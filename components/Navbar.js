@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`p-4 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className={`shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
+      <div className="container mx-auto flex justify-between items-center p-5">
         {/* Logo */}
         <Link href="/" className={`text-lg font-bold ${darkMode ? 'text-white' : 'text-white'} transition-all duration-300`}>
           KM
@@ -45,12 +45,12 @@ const Navbar = () => {
 
         {/* Mobile Menu - Opened state */}
         {isOpen && (
-          <div className="fixed bg-black inset-0 bg-opacity-30 z-50 p-5">
+          <div className="fixed bg-black inset-0 bg-opacity-30 z-50">
             <div className="flex justify-between items-center p-5 bg-gray-900 text-white">
               <span className="text-xl justify-center font-bold">Menu</span>
               <button onClick={toggleMenu} className="justify-center text-white text-3xl">✖</button>
             </div>
-            <div className="flex flex-col items-center justify-center h-[20vh] bg-gray-900 text-white space-y-6">
+            <div className="flex flex-col items-center justify-center h-[20vh] bg-gray-900 text-white space-y-6 py-5">
               <Link href="/" className="text-sm font-semibold hover:text-yellow-400" onClick={toggleMenu}>
                 Home
               </Link>
