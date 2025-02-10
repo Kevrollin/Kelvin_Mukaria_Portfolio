@@ -26,16 +26,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`p-5 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
+    <nav className={`fixed p-5 shadow-lg ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} transition-colors duration-300`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-white'} transition-all duration-300`}>
-          Kelvin Mukaria
+          KM
         </Link>
 
         {/* Dark Mode Toggle */}
         <button onClick={toggleDarkMode} className="text-gray-500 dark:text-white transition-all duration-300 hover:text-yellow-400">
-          {darkMode ? '🌙' : '☀️'}
+          {darkMode ? 'LIGHT' : 'DARK'}
         </button>
 
         {/* Mobile Hamburger Menu */}
@@ -45,7 +45,7 @@ const Navbar = () => {
 
         {/* Mobile Menu - Opened state */}
         {isOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-60 z-50">
+          <div className="fixed bg-black bg-opacity-60 z-50">
             <div className="flex justify-between items-center p-5 bg-gray-900 text-white">
               <span className="text-xl font-bold">Menu</span>
               <button onClick={toggleMenu} className="text-white text-3xl">✖</button>

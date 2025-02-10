@@ -1,10 +1,8 @@
-import Header from '../components/Header'
 
 export default function Contact() {
   return (
     
     <div className='py-'>
-      <Header />
       <main className="h-screen p-10 text-center bg-gray-900">
         <h2 className="text-6xl font-bold text-white py-28">Contact <span className='text-warning'>Me!</span></h2>
         <form className="mt-8 max-w-3xl mx-auto py-22">

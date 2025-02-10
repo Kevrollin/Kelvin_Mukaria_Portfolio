@@ -117,12 +117,12 @@ const Skills = () => {
 
         {/* New Section for Collaboration */}
         <div className="text-center lg:py-28 sm:py-16 sm:px-28">
-          <p className="text-4xl font-semibold text-white mb-6">
+          <p className="text-2xl font-semibold text-white mb-6">
             Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amaizing stuff</span>?
           </p>
           <button
             onClick={openModal}
-            className="bg-primary text-white py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all w-1/2"
+            className="bg-primary text-white py-4 px-12 rounded-lg hover:bg-warning hover:scale-105 transition-all"
           >
             Let Collaborate!
           </button>

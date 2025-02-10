@@ -43,15 +43,13 @@ export default function Home() {
           <div className="md:ml-10 text-center md:text-left max-w-2xl">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-primary mb-4">
               I&apos;m Kelvin, <br />
-              <span className='text-lg sm:text-xl text-warning'>Web Developer | Cybersecurity | Programmer</span> 
+              <span className='text-warning'>Web Developer | Cybersecurity | Programmer</span> 
             </h2>
 
-            <p className="mt-4 text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            <p className="mt-4 lg:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
               Passionate about <strong>web development and cybersecurity</strong>, I specialize in <strong>full-stack development</strong> using
-              JavaScript, Python, Next.js, and C#. I love building scalable, secure, and high-performance applications.
-            </p>
-            <p className="mt-4 text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-              My expertise lies in crafting <strong>interactive web experiences</strong> and implementing <strong>strong cybersecurity principles</strong>.
+              JavaScript, Python, Next.js, and C#. I love building scalable, secure, and high-performance applications. My expertise lies in crafting 
+              <strong>interactive web experiences</strong> and implementing <strong>strong cybersecurity principles</strong>.
             </p>
 
             {/* Social Icons */}
