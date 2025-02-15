@@ -42,10 +42,10 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Plant Sale Website',
+      title: 'Plant Shop Website',
       description: 'A fully responsive e-commerce site for selling plants.',
-      link: 'https://github.com/your-username/plant-sale-website',
-      image: '/assets/plant-sale.png',
+      link: 'https://plant-shop-8yas.vercel.app/',
+      image: '/images/plant-shop.JPG',
     },
     {
       title: 'Vulnerability Scanner',
@@ -105,6 +105,7 @@ export default function Projects() {
 
   return (
     <div className="bg-gray-900">
+      
       <div className="text-center lg:py-8 sm:py-16 sm:px-28">
         <p className="text-sm font-semibold text-white mb-6">
           Are you a <span className="text-warning">Developer</span>? Want us to build some <span className="text-primary">amazing stuff</span>?
@@ -157,12 +158,15 @@ export default function Projects() {
 
       <main className="p-10 mx-68">
         <h2 className="text-4xl font-bold text-white text-center">Projects</h2>
+        <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
+        </div>
       </main>
-    </div>
+      </div>
+
   );
 }
