@@ -48,10 +48,10 @@ export default function Projects() {
       image: '/images/plant-shop.JPG',
     },
     {
-      title: 'Vulnerability Scanner',
-      description: 'A tool to scan websites for potential vulnerabilities.',
-      link: 'https://github.com/your-username/vulnerability-scanner',
-      image: '/assets/vulnerability-scanner.png',
+      title: 'To-Do App',
+      description: 'A Web app to help you stay organized and track your work. Built using HTML, CSS and Javascript.',
+      link: 'https://kevrollin.github.io/To-Do-List-HTML-CSS-and-JS-/',
+      image: '/images/ToDoApp.JPG',
     },
     {
       title: 'Plant Sale Website',
